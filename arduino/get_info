@@ -18,6 +18,7 @@ void loop()
 {
 
   Si446x_getInfo(&info); 
-  Serial.println("hi"); 
+  Serial.println(info.chipRev, HEX);
+  Serial.println(info.part, HEX); 
 	delay(1000);	
 }
